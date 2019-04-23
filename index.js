@@ -11,7 +11,7 @@ const subscribe = (topic, handler) => {
     topics[topic].push({ handler, id })
 
     return { topic, id }
-};
+}
 
 const unsubscribe = ({ topic, id }) => {
     if (! topics.hasOwnProperty(topic)) return
